@@ -6,6 +6,15 @@ func main() {
 	fmt.Printf("%d is even : %t\n", 5, even(5))
 	fmt.Printf("%d is odd : %t\n", 6, odd(6))
 	fmt.Printf("%d is odd : %t\n", 7, odd(7))
+	a(10)
+}
+
+func a(n int) {
+	if n == 0 {
+		return
+	}
+	println(n)
+	a(n - 1)
 }
 
 func even(n int) bool {
