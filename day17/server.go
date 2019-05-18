@@ -10,7 +10,7 @@ func main() {
 	listener, err := net.Listen("tcp", "localhost:50000")
 
 	if err != nil {
-		fmt.Println("error", error.Error())
+		fmt.Println("error", err.Error())
 		return
 	}
 	// 监听并接受客户端链接
